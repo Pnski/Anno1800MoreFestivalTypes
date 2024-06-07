@@ -119,10 +119,10 @@
 		</IncidentProtection>
 		<Effects>
 			<Item>
-				<Effect>141896</Effect><!--ResidenceBuff?-->
+				<Effect>1600000029</Effect><!--ResidenceBuff?-->
 			</Item>
 			<Item>
-				<Effect>142449</Effect><!--ProductionBuff?-->
+				<Effect>1600000030</Effect><!--ProductionBuff?-->
 			</Item>
 		</Effects>
 		<FestivalName>1600000026</FestivalName>
@@ -192,9 +192,6 @@
 		<CrowdSoundEvent>200733</CrowdSoundEvent>
 		<FestivalDecoration>142641</FestivalDecoration>
 	</ModOp>
-	<!--Adding to Regions [Moderate Colony01-->
-	<!--<AllowedFestivals>BeerFestival;HarvestFestival;ArtsFestival;Commemoration;Carnival;AnarchyFest</AllowedFestivals>-->
-	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Moderate or self::Colony01]/AllowedFestivals">;Stadium7;Stadium8</ModOp>
 	<!--Text-->
 	<ModOp Type="addNextSibling" GUID='129671'>
 		<Asset>
@@ -380,4 +377,148 @@
 			</Values>
 		</Asset>
 	</ModOp>
+	<ModOp Type="addNextSibling" GUID='1600000025'>
+		<Asset>
+			<Template>FestivalBuff</Template>
+			<Values>
+				<Standard>
+					<GUID>1600000029</GUID>
+					<Name>ChristmasDayResidencesBuff</Name>
+					<IconFilename>data/ui/2kimages/main/3dicons/icon_ornament_christmas.png</IconFilename>
+					<InfoDescription>1600000032</InfoDescription>
+				</Standard>
+				<!--<Text>
+					<LocaText>
+						<English>
+							<Text>Christmas Day</Text>
+							<Status>Exported</Status>
+						</English>
+					</LocaText>
+					<LineID>25925</LineID>
+				</Text>-->
+				<PopulationUpgrade/>
+				<ResidenceUpgrade>
+					<AdditionalHappiness>25</AdditionalHappiness>
+					<GoodConsumptionUpgrade>
+						<Item>
+							<ProvidedNeed>1010216</ProvidedNeed>
+							<!--schnapps-->
+							<AmountInPercent>-100</AmountInPercent>
+						</Item>
+						<Item>
+							<ProvidedNeed>1010214</ProvidedNeed>
+							<!--beer-->
+							<AmountInPercent>-100</AmountInPercent>
+						</Item>
+						<Item>
+							<ProvidedNeed>1010257</ProvidedNeed>
+							<!--rum-->
+							<AmountInPercent>-100</AmountInPercent>
+						</Item>
+						<Item>
+							<ProvidedNeed>120016</ProvidedNeed>
+							<!--champagne-->
+							<AmountInPercent>-100</AmountInPercent>
+						</Item>
+					</GoodConsumptionUpgrade>
+				</ResidenceUpgrade>
+				<ItemEffect>
+					<EffectTargets>
+						<Item>
+							<GUID>190762</GUID>
+							<!--all residences EU & SA + Africa & Scholar-->
+						</Item>
+					</EffectTargets>
+				</ItemEffect>
+				<Buff/>
+				<CultureUpgrade/>
+				<KontorUpgrade/>
+				<AttackableUpgrade/>
+				<AttackerUpgrade/>
+				<BuildingUpgrade/>
+				<FactoryUpgrade/>
+				<PassiveTradeGoodGenUpgrade/>
+				<ShipyardUpgrade/>
+				<VisitorHarborUpgrade/>
+				<VisitorUpgrade/>
+			</Values>
+		</Asset>	
+	</ModOp>
+	<ModOp Type="addNextSibling" GUID='1600000027'>
+		<Asset>
+			<Template>FestivalBuff</Template>
+			<Values>
+				<Standard>
+					<GUID>1600000030</GUID>
+					<Name>ChristmasDayProductionBuff</Name>
+					<IconFilename>data/ui/2kimages/main/3dicons/icon_ornament_christmas.png</IconFilename>
+					<InfoDescription>1600000032</InfoDescription>
+				</Standard>
+				<!--<Text>
+					<LocaText>
+						<English>
+							<Text>Christmas Day</Text>
+							<Status>Exported</Status>
+						</English>
+					</LocaText>
+					<LineID>28706</LineID>
+				</Text>-->
+				<PopulationUpgrade/>
+				<ResidenceUpgrade/>
+				<ItemEffect>
+					<EffectTargets>
+						<Item>
+							<GUID>192566</GUID>
+							<!--all alcohol production chains-->
+						</Item>
+					</EffectTargets>
+				</ItemEffect>
+				<Buff/>
+				<CultureUpgrade/>
+				<KontorUpgrade/>
+				<AttackableUpgrade/>
+				<AttackerUpgrade/>
+				<BuildingUpgrade>
+					<WorkforceAmountUpgrade>
+						<Value>-25</Value>
+						<Percental>1</Percental>
+					</WorkforceAmountUpgrade>
+				</BuildingUpgrade>
+				<FactoryUpgrade>
+					<ProductivityUpgrade>
+						<Value>50</Value>
+						<Percental>1</Percental>
+					</ProductivityUpgrade>
+				</FactoryUpgrade>
+				<PassiveTradeGoodGenUpgrade/>
+				<ShipyardUpgrade/>
+				<VisitorHarborUpgrade/>
+				<VisitorUpgrade/>
+			</Values>
+		</Asset>
+	</ModOp>
+	<ModOp Type="addNextSibling" GUID='1600000026'>
+		<Asset>
+			<Template>Text</Template>
+			<Values>
+				<Standard>
+					<GUID>1600000032</GUID>
+					<Name>Mens Health Week Description</Name>
+					<IconFilename>data/ui/2kimages/main/3dicons/icon_ornament_christmas.png</IconFilename>
+				</Standard>
+				<!--<Text>
+					<LocaText>
+						<English>
+							<Text>Recognizing and preventing men’s health problems is not just a man’s issue. Because of its impact on wives, mothers, daughters, and sisters, men’s health is truly a family issue.</Text>
+							<Status>Exported</Status>
+						</English>
+					</LocaText>
+					<LineID>28633</LineID>
+				</Text>-->
+			</Values>
+		</Asset>
+	</ModOp>
+	<!--Adding to Regions [Moderate Colony01-->
+	<!--<AllowedFestivals>BeerFestival;HarvestFestival;ArtsFestival;Commemoration;Carnival;AnarchyFest</AllowedFestivals>-->
+	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Moderate or self::Colony01]/AllowedFestivals">;Stadium7;Stadium8</ModOp>
 </ModOps>
