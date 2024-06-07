@@ -1,6 +1,6 @@
 {
   "Version": "0.0.1",
-  "ModID": "MoreFestivalTypes",
+  "ModID": "MoreFestivalTypes_Nyk",
   "DeprecateIds": [],
   "LoadAfterIds": [],
   "IncompatibleIds": null,
@@ -45,7 +45,12 @@
     "Taiwanese": null
   },
   "KnownIssues": null,
-  "DLCDependencies": null,
+  "DLCDependencies": [
+    {
+      "DLC" : "Anarchist",
+      "Dependant": "partly"
+    }
+  ],
   "CreatorName": "Pnski",
   "CreatorContact": null,
   "Image": null

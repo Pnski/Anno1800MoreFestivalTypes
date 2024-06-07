@@ -1,5 +1,239 @@
+<!--
+1600000025 | MoreFestivalTypes_Nyk | 0.0.1 | Festivalname: Mens Health
+1600000026 | MoreFestivalTypes_Nyk | 0.0.1 | Festivalname: Christmas Day
+1600000027 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff1: Mens Health
+1600000028 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff2: Mens Health
+1600000029 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff1: Christmas Day
+1600000030 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff2: Christmas Day
+-->
 <ModOps>
-	<ModOp Type = "Replace" GUID='131764' Path="/Values/TradeContractFeature/TraderTransferTime">
-		<TraderTransferTime>900000</TraderTransferTime>
+	<!--remove ALL weights-->
+	<ModOp Type="remove" GUID='141893' Path="/Values/IncidentFestival/FestivalTypes/*/Weight" /><!--Condition="AnarchyDLC"-->
+	<!--Men's Health Week-->
+	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalTypes">
+		<MensWeek>
+			<StartNotification>501208</StartNotification>
+			<EndNotification>501210</EndNotification>
+			<AboutToEndNotification>501211</AboutToEndNotification>
+			<EstimatedRemainingTimeForAboutToEndNotification>150000</EstimatedRemainingTimeForAboutToEndNotification>
+			<BonusAttractiveness>250</BonusAttractiveness>
+			<IncidentProtection>
+				<Fire><Protected>1</Protected></Fire>
+				<Riot><Protected>1</Protected></Riot>
+				<Illness><Protected>1</Protected></Illness>
+				<Explosion><Protected>1</Protected></Explosion>
+			</IncidentProtection>
+			<Effects>
+				<Item>
+					<Effect>141896</Effect><!--ResidenceBuff?-->
+				</Item>
+				<Item>
+					<Effect>142449</Effect><!--ProductionBuff?-->
+				</Item>
+			</Effects>
+			<FestivalName>1600000025</FestivalName>
+			<FestivalIcon>1600000025</FestivalIcon>
+			<ParadeWagons>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeBeerWagon</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDancer</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeBeerWagon</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDancer</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeBeerWagon</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+			</ParadeWagons>
+			<MinParadeDistance>20</MinParadeDistance>
+			<MaxParadeDistance>40</MaxParadeDistance>
+			<ParadeSoundEvent>200735</ParadeSoundEvent>
+			<CrowdSoundEvent>200733</CrowdSoundEvent>
+			<FestivalDecoration>142641</FestivalDecoration>
+		</MensWeek>
+	</ModOp>
+	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalTypes">
+		<ChristmasDay>
+			<StartNotification>501208</StartNotification>
+			<EndNotification>501210</EndNotification>
+			<AboutToEndNotification>501211</AboutToEndNotification>
+			<EstimatedRemainingTimeForAboutToEndNotification>150000</EstimatedRemainingTimeForAboutToEndNotification>
+			<BonusAttractiveness>250</BonusAttractiveness>
+			<IncidentProtection>
+				<Fire><Protected>1</Protected></Fire>
+				<Riot><Protected>1</Protected></Riot>
+				<Illness><Protected>1</Protected></Illness>
+				<Explosion><Protected>1</Protected></Explosion>
+			</IncidentProtection>
+			<Effects>
+				<Item>
+					<Effect>141896</Effect><!--ResidenceBuff?-->
+				</Item>
+				<Item>
+					<Effect>142449</Effect><!--ProductionBuff?-->
+				</Item>
+			</Effects>
+			<FestivalName>1600000026</FestivalName>
+			<FestivalIcon>1600000026</FestivalIcon>
+			<ParadeWagons>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeBeerWagon</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDancer</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeBeerWagon</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDancer</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeBeerWagon</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeDrums</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+				<Item>
+					<Wagon>ParadeTrumpets</Wagon>
+				</Item>
+			</ParadeWagons>
+			<MinParadeDistance>20</MinParadeDistance>
+			<MaxParadeDistance>40</MaxParadeDistance>
+			<ParadeSoundEvent>200735</ParadeSoundEvent>
+			<CrowdSoundEvent>200733</CrowdSoundEvent>
+			<FestivalDecoration>142641</FestivalDecoration>
+		</ChristmasDay>
+	</ModOp>
+	<!--Adding to Regions [Moderate Colony01-->
+	<!--<AllowedFestivals>BeerFestival;HarvestFestival;ArtsFestival;Commemoration;Carnival;AnarchyFest</AllowedFestivals>-->
+	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion[Moderate]/AllowedFestivals">
+		;MensHealth;ChristmasDay
+	</ModOp>
+	<!--Text-->
+	<ModOp Type="addNextSibling" GUID='129671'>
+		<Asset>
+			<Template>Text</Template>
+			<Values>
+				<Standard>
+					<GUID>1600000025</GUID>
+					<Name>Mens Health Week Name</Name>
+					<IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png</IconFilename>
+				</Standard>
+				<Text>
+					<LocaText>
+						<English>
+							<Text>Men's Health Week</Text>
+							<Status>Exported</Status>
+						</English>
+					</LocaText>
+					<LineID>44106</LineID>
+				</Text>
+			</Values>
+		</Asset>		
+	</ModOp>
+	<ModOp Type="addNextSibling" GUID='129671'>
+		<Asset>
+			<Template>Text</Template>
+			<Values>
+				<Standard>
+					<GUID>1600000026</GUID>
+					<Name>Christmas Day Name</Name>
+					<IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_scriptures.png</IconFilename>
+				</Standard>
+				<Text>
+					<LocaText>
+						<English>
+							<Text>Christmas Day</Text>
+							<Status>Exported</Status>
+						</English>
+					</LocaText>
+					<LineID>44106</LineID>
+				</Text>
+			</Values>
+		</Asset>		
 	</ModOp>
 </ModOps>
