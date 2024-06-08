@@ -2,7 +2,7 @@
   "Version": "0.0.1",
   "ModID": "MoreFestivalTypes_Nyk",
   "DeprecateIds": [],
-  "LoadAfterIds": [],
+  "LoadAfterIds": ["military_attention"],
   "IncompatibleIds": null,
   "ModDependencies": null,
   "Category": {

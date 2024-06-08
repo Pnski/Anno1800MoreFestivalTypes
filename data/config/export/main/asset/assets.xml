@@ -1,7 +1,5 @@
+<!--1600000034 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalSound: Christmas Day - SoundBank-->
 <ModOps>
-	<ModOp Type="merge" GUID='141265'>
-		
-	</ModOp>
 	<!-- Buff Rewards trigger the Stadium Festival with the same buff in NW. So, we just override the buff. -->
 	<!--Stadium2,3,4,5 reserved NewHorizon-->
 	<!--Stadium1,6,11 reserved for Rewards-->
@@ -18,8 +16,13 @@
 	<Include File = "menshealth.include.xml" /><!--Stadium7-->
 	<Include File = "christmas.include.xml" /><!--Stadium8-->
 	<!--CocaColaFestival?Stadium9-->
-	<!--Stadium10-->
+	<!--AuroraFestivalStadium10-->
 	<!--Adding to Regions [Moderate Colony01-->
 	<!--<AllowedFestivals>BeerFestival;HarvestFestival;ArtsFestival;Commemoration;Carnival;AnarchyFest</AllowedFestivals>-->
 	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Moderate or self::Colony01]/AllowedFestivals">;Stadium7;Stadium8</ModOp>
+	<!--<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/">
+		<Arctic>
+			<AllowedFestivals>Stadium10</AllowedFestivals>
+		</Arctic>
+	</ModOp>-->
 </ModOps>

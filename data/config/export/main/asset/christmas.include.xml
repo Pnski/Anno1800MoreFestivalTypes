@@ -2,8 +2,8 @@
 1600000030 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff1: Christmas Day
 1600000031 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff2: Christmas Day
 1600000032 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff: Christmas Day - Description
-1600000033 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalSound: Christmas Day - SoundBank
-1600000034 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalSound: Christmas Day - Sound-->
+1600000033 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalSound: Christmas Day - Sound
+-->
 <ModOps>
     <!--Christmas Day-->
 	<ModOp Type="replace" GUID='141893' Path="/Values/IncidentFestival/FestivalTypes/Stadium8/*">
