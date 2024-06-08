@@ -20,6 +20,7 @@
 	<!--Adding to Regions [Moderate Colony01-->
 	<!--<AllowedFestivals>BeerFestival;HarvestFestival;ArtsFestival;Commemoration;Carnival;AnarchyFest</AllowedFestivals>-->
 	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Moderate or self::Colony01]/AllowedFestivals">;Stadium7;Stadium8</ModOp>
+	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Africa]/AllowedFestivals">;Stadium7</ModOp>
 	<!--<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/">
 		<Arctic>
 			<AllowedFestivals>Stadium10</AllowedFestivals>

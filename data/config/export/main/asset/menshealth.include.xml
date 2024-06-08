@@ -110,6 +110,9 @@
 						<Item>
 							<GUID>6086</GUID>
 						</Item>
+						<Item>
+							<GUID>114436</GUID>
+						</Item>
 					</EffectTargets>
 				</ItemEffect>
 				<Buff/>
