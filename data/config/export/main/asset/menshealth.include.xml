@@ -74,19 +74,19 @@
 					<GoodConsumptionUpgrade>
 						<Item>
 							<ProvidedNeed>1010216</ProvidedNeed>
-							<AmountInPercent>50</AmountInPercent>
+							<AmountInPercent>-50</AmountInPercent>
 						</Item>
 						<Item>
 							<ProvidedNeed>1010257</ProvidedNeed>
-							<AmountInPercent>50</AmountInPercent>
+							<AmountInPercent>-50</AmountInPercent>
 						</Item>
 						<Item>
 							<ProvidedNeed>120016</ProvidedNeed>
-							<AmountInPercent>50</AmountInPercent>
+							<AmountInPercent>-50</AmountInPercent>
 						</Item>
 						<Item>
 							<ProvidedNeed>1010214</ProvidedNeed>
-							<AmountInPercent>50</AmountInPercent>
+							<AmountInPercent>-50</AmountInPercent>
 						</Item>
 					</GoodConsumptionUpgrade>
 				</ResidenceUpgrade>
