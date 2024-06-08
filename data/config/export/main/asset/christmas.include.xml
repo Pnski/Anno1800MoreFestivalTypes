@@ -1,7 +1,9 @@
 <!--1600000029 | MoreFestivalTypes_Nyk | 0.0.1 | Festivalname: Christmas Day
 1600000030 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff1: Christmas Day
 1600000031 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff2: Christmas Day
-1600000032 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff: Christmas Day - Description-->
+1600000032 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalBuff: Christmas Day - Description
+1600000033 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalSound: Christmas Day - SoundBank
+1600000034 | MoreFestivalTypes_Nyk | 0.0.1 | FestivalSound: Christmas Day - Sound-->
 <ModOps>
     <!--Christmas Day-->
 	<ModOp Type="replace" GUID='141893' Path="/Values/IncidentFestival/FestivalTypes/Stadium8/*">
@@ -27,63 +29,16 @@
 		<FestivalName>1600000029</FestivalName>
 		<FestivalIcon>1600000029</FestivalIcon>
 		<ParadeWagons>
-			<Item>
-				<Wagon>ParadeDrums</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeBeerWagon</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDancer</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDrums</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDrums</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeBeerWagon</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDrums</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDrums</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDancer</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeBeerWagon</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeDrums</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
-			<Item>
-				<Wagon>ParadeTrumpets</Wagon>
-			</Item>
+			<Item><Wagon>ParadeTrumpets</Wagon></Item>
+			<Item><Wagon>ParadeTrumpets</Wagon></Item>
+			<Item><Wagon>ParadeDrums</Wagon></Item>
+			<Item><Wagon>ParadeDrums</Wagon></Item>
+			<Item><Wagon>ParadeDancer</Wagon></Item>
+			<Item><Wagon>ParadeDancer</Wagon></Item>
+			<Item><Wagon>WalkingGuards</Wagon></Item>
+			<Item><Wagon>MountedGuards</Wagon></Item>
+			<Item><Wagon>ParadeQueen</Wagon></Item>
+			<Item><Wagon>MountedGuards</Wagon></Item>
 		</ParadeWagons>
 		<MinParadeDistance>20</MinParadeDistance>
 		<MaxParadeDistance>40</MaxParadeDistance>
@@ -120,6 +75,10 @@
 					<AdditionalHappiness>25</AdditionalHappiness>
 					<GoodConsumptionUpgrade>
 						<Item>
+							<ProvidedNeed>1010200</ProvidedNeed>
+							<AmountInPercent>-100</AmountInPercent>
+						</Item>
+						<Item>
 							<ProvidedNeed>1010238</ProvidedNeed>
 							<AmountInPercent>-100</AmountInPercent>
 						</Item>
@@ -133,11 +92,9 @@
 					<EffectTargets>
 						<Item>
 							<GUID>190762</GUID>
-							<!--all residences EU & SA + Africa & Scholar-->
 						</Item>
                         <Item>
                             <GUID>191563</GUID>
-                            <!--all visitors piers-->
                         </Item>
 					</EffectTargets>
 				</ItemEffect>

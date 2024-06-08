@@ -45,12 +45,7 @@
     "Taiwanese": null
   },
   "KnownIssues": null,
-  "DLCDependencies": [
-    {
-      "DLC" : "Anarchist",
-      "Dependant": "partly"
-    }
-  ],
+  "DLCDependencies": null,
   "CreatorName": "Pnski",
   "CreatorContact": null,
   "Image": null
