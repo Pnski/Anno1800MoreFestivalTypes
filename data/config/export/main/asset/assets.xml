@@ -15,15 +15,15 @@
 	</ModOp>
 	<Include File = "menshealth.include.xml" /><!--Stadium7-->
 	<Include File = "christmas.include.xml" /><!--Stadium8-->
-	<!--CocaColaFestival?Stadium9-->
-	<!--AuroraFestivalStadium10-->
-	<!--Adding to Regions [Moderate Colony01-->
+	<Include File = "aurora.include.xml" /><!--Stadium9-->
+	<!--CocaColaFestival?-->
 	<!--<AllowedFestivals>BeerFestival;HarvestFestival;ArtsFestival;Commemoration;Carnival;AnarchyFest</AllowedFestivals>-->
 	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Moderate or self::Colony01]/AllowedFestivals">;Stadium7;Stadium8</ModOp>
 	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Africa]/AllowedFestivals">;Stadium7</ModOp>
-	<!--<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/">
+	<ModOp Type="add" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/*[self::Arctic]/AllowedFestivals" Condition="/Values/IncidentFestival/FestivalsPerRegion/Arctic[1]">;Stadium9</ModOp>
+	<ModOp Type="merge" GUID='141893' Path="/Values/IncidentFestival/FestivalsPerRegion/" Condition="!/Values/IncidentFestival/FestivalsPerRegion/Arctic[1]">
 		<Arctic>
-			<AllowedFestivals>Stadium10</AllowedFestivals>
+			<AllowedFestivals>Stadium9</AllowedFestivals>
 		</Arctic>
-	</ModOp>-->
+	</ModOp>
 </ModOps>
