@@ -9,11 +9,11 @@
 		<EndNotification>501210</EndNotification>
 		<AboutToEndNotification>501211</AboutToEndNotification>
 		<EstimatedRemainingTimeForAboutToEndNotification>150000</EstimatedRemainingTimeForAboutToEndNotification>
-		<BonusAttractiveness>100</BonusAttractiveness>
+		<!--<BonusAttractiveness>100</BonusAttractiveness>--><!--no attractiveness in arctic-->
 		<IncidentProtection>
 			<Fire><Protected>1</Protected></Fire>
 			<Riot><Protected>1</Protected></Riot>
-			<Illness><Protected>1</Protected></Illness>
+			<!--<Illness><Protected>1</Protected></Illness>-->
 			<Explosion><Protected>1</Protected></Explosion>
 		</IncidentProtection>
 		<Effects>
@@ -28,16 +28,12 @@
 		<FestivalIcon>1600000033</FestivalIcon>
 		<ParadeWagons>
 		<Item><Wagon>ParadeDancer</Wagon></Item>
-		<Item><Wagon>ParadeBeerWagon</Wagon></Item>
-		<Item><Wagon>ParadeBeerWagon</Wagon></Item>
 		<Item><Wagon>ParadeDancer</Wagon></Item>
 		<Item><Wagon>ParadeDancer</Wagon></Item>
-		<Item><Wagon>AnarchyParadeWagon</Wagon></Item>
-		<Item><Wagon>AnarchyParadeWagon</Wagon></Item>
 		<Item><Wagon>ParadeDancer</Wagon></Item>
 		</ParadeWagons>
-		<MinParadeDistance>20</MinParadeDistance>
-		<MaxParadeDistance>60</MaxParadeDistance>
+		<MinParadeDistance>10</MinParadeDistance>
+		<MaxParadeDistance>20</MaxParadeDistance>
 		<ParadeSoundEvent>200735</ParadeSoundEvent>
 		<CrowdSoundEvent>200733</CrowdSoundEvent>
 		<FestivalDecoration>142641</FestivalDecoration>
@@ -50,7 +46,7 @@
 				<Standard>
 					<GUID>1600000033</GUID>
 					<Name>Aurora Borealis Festival Name</Name>
-					<IconFilename>data/ui/2kimages/main/aurora.png</IconFilename>
+					<IconFilename>data/ui/2kimages/main/aurora2.png</IconFilename>
 				</Standard>
 			</Values>
 		</Asset>		
@@ -63,7 +59,7 @@
 				<Standard>
 					<GUID>1600000034</GUID>
 					<Name>AuroraBorealisResidencesBuff</Name>
-					<IconFilename>data/ui/2kimages/main/aurora.png</IconFilename>
+					<IconFilename>data/ui/2kimages/main/aurora2.png</IconFilename>
 					<InfoDescription>1600000036</InfoDescription>
 				</Standard>
 				<PopulationUpgrade />
@@ -71,19 +67,19 @@
 					<GoodConsumptionUpgrade>
 						<Item>
 							<ProvidedNeed>1010216</ProvidedNeed>
-							<AmountInPercent>-50</AmountInPercent>
+							<AmountInPercent>-25</AmountInPercent>
+						</Item>
+						<Item>
+							<ProvidedNeed>120032</ProvidedNeed>
+							<AmountInPercent>-25</AmountInPercent>
 						</Item>
 						<Item>
 							<ProvidedNeed>1010257</ProvidedNeed>
-							<AmountInPercent>-50</AmountInPercent>
-						</Item>
-						<Item>
-							<ProvidedNeed>120016</ProvidedNeed>
-							<AmountInPercent>-50</AmountInPercent>
+							<AmountInPercent>-25</AmountInPercent>
 						</Item>
 						<Item>
 							<ProvidedNeed>1010214</ProvidedNeed>
-							<AmountInPercent>-50</AmountInPercent>
+							<AmountInPercent>-25</AmountInPercent>
 						</Item>
 					</GoodConsumptionUpgrade>
 				</ResidenceUpgrade>
@@ -118,7 +114,7 @@
 				<Standard>
 					<GUID>1600000035</GUID>
 					<Name>AuroraBorealisProductionBuff</Name>
-					<IconFilename>data/ui/2kimages/main/aurora.png</IconFilename>
+					<IconFilename>data/ui/2kimages/main/aurora2.png</IconFilename>
 					<InfoDescription>1600000036</InfoDescription>
 				</Standard>
 				<PopulationUpgrade/>
@@ -162,7 +158,7 @@
 				<Standard>
 					<GUID>1600000036</GUID>
 					<Name>Aurora Borealis Week Description</Name>
-					<IconFilename>data/ui/2kimages/main/aurora.png</IconFilename>
+					<IconFilename>data/ui/2kimages/main/aurora2.png</IconFilename>
 				</Standard>
 			</Values>
 		</Asset>
